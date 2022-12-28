@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <cn.iichen.giftchannel.GiftAnimLayout
+        android:id="@+id/giftAnimLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="addGiftOne"
+            android:text="礼物1"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:onClick="addGiftTwo"
+            android:text="礼物2"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:onClick="addGiftThree"
+            android:text="礼物3"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:onClick="switchGift"
+            android:text="切换礼物"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="removeGiftOne"
+            android:text="移除礼物1"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:onClick="removeGiftTwo"
+            android:text="移除礼物2"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:onClick="removeGiftThree"
+            android:text="移除礼物3"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>
